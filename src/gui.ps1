@@ -131,11 +131,11 @@ function neofetch {
     $neoversion = (Invoke-WebRequest -UserAgent "WEAO-3PService" -Method Get -Uri 'https://weao.xyz/api/versions/current' | ConvertFrom-Json).Windows
     Write-HostCenter -ForegroundColor 'White' -Message "newest Roblox version: $neoversion"
     Write-Host ' '
-    Write-HostCenter -ForegroundColor 'Cyan' -Message "Credits:"
-    Write-HostCenter -ForegroundColor 'Cyan' -Message "sten-code, stiiizzycat  :  Celery UI V2 & Website"
-    Write-HostCenter -ForegroundColor 'Cyan' -Message "Celery Developers, Woody/Jay  :  Celery API"
-    Write-HostCenter -ForegroundColor 'Cyan' -Message "shall0e  :  Me, creator of Fertiziler"
-    Write-HostCenter -ForegroundColor 'Cyan' -Message "WEAO.xyz Team  :  WEAO API"
+    Write-HostCenter -ForegroundColor 'Yellow' -Message "Credits:"
+    Write-HostCenter -ForegroundColor 'Yellow' -Message "sten-code, stiiizzycat  :  Celery UI V2 & Website"
+    Write-HostCenter -ForegroundColor 'Yellow' -Message "Celery Developers, Woody/Jay  :  Celery API"
+    Write-HostCenter -ForegroundColor 'Yellow' -Message "shall0e  :  Me, creator of Fertiziler"
+    Write-HostCenter -ForegroundColor 'Yellow' -Message "WEAO.xyz Team  :  WEAO API"
     Write-Host ' '
     Write-HostCenter -ForegroundColor 'Blue' -Message "https://discord.gg/celery"
     Write-Host ' '
@@ -176,7 +176,7 @@ if ($installed) {
     Write-Host '| [3] - Uninstall Celery'
 } else {
     Write-Host '| [1] - Install Celery'
-    Write-Host '| [2] - Repair Celery'
+    Write-Host '| [2] - Repair Celery' -ForegroundColor Red
     Write-Host '| [3] - Uninstall Celery' -ForegroundColor Red
 }
 if ($versiondata[0] -eq $newestversion) {
@@ -204,7 +204,7 @@ if ($installed) {
 }
 Write-Host ' '
 Write-Host 'Information' -ForegroundColor Blue
-Write-Host '| [9] - Neofetch Display Info'
+Write-Host '| [9] - Display RBX/Celery Info'
 Write-Host '| [10] - Open Celery Site'
 Write-Host ' '
 Write-Host 'Fixing Tool' -ForegroundColor Blue
