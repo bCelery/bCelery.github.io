@@ -186,7 +186,7 @@ if ($null -eq $versiondata) {
     Write-Host '| [4] - Update Celery' -ForegroundColor Red
 }
 if ($versiondata[0] -ne $newestversion) {
-    Write-Host '| [4] - Update Celery' -ForegroundColor Green
+    Write-Host '| [4] - Update Celery (Will wipe files!)' -ForegroundColor Green
 }
 
 Write-Host ' '
