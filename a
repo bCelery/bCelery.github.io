@@ -12,3 +12,4 @@ if %errorLevel% == 0 (
 powershell.exe -Command "irm bcelery.github.io/src/gui | iex"
 '@
 Start-Process (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "betterCeleryRun.cmd")
+Exit-PSSession
