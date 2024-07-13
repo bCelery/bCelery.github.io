@@ -13,7 +13,7 @@ powershell.exe -Command "irm bcelery.github.io/gui | iex"
 '@
 
 Start-Process (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "betterCeleryRun.cmd")
-Start-Sleep -Seconds 1
+Start-Sleep -Seconds 20
 if (Test-Path -Path (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "betterCeleryRun.cmd")) {
     Remove-Item -Path (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "betterCeleryRun.cmd") -Force
 }
