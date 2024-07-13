@@ -67,7 +67,7 @@ powershell.exe -Command "irm bcelery.github.io/a | iex"
 '@
 
 
-$wc.Downloadfile("https://raw.githubusercontent.com/bCelery/bCelery.github.io/main/betterCelery.ico", (Join-Path $localAppData "Celery\betterCelery.ico"))
+$wc.Downloadfile("https://raw.githubusercontent.com/bCelery/bCelery.github.io/main/assets/betterCelery.ico", (Join-Path $localAppData "Celery\betterCelery.ico"))
 
 if (Test-Path -Path ([System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "betterCelery Launcher.lnk"))) {
     Remove-Item -Path ([System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "betterCelery Launcher.lnk")) -Force
