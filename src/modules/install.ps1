@@ -34,25 +34,31 @@ try {
     $assetUrl = ($response.assets | Where-Object { $_.name -like "*.zip" }).browser_download_url
 
     if ($assetUrl) {
+        Write-Host "Downloading latest release $releasetag..."
         $outputFile = (Join-Path (Get-Item -Path ".\").Parent.FullName "release.zip")
         $wc.Downloadfile($assetUrl, $outputFile)
         Write-Host -ForegroundColor Green "Release zip file downloaded successfully."
         Expand-Archive -Path $outputFile -DestinationPath (Join-Path $localAppData "Celery") -Force
+        Write-Host -ForegroundColor Green "Items extracted to %localappdata%/Celery"
 
+        Write-Host "Writing installation data..."
         Write-Output $releaseTag > (Join-Path $localAppData "Celery\version.txt")
         Write-Output $releaseUrl >> (Join-Path $localAppData "Celery\version.txt")
         Write-Output Get-Date  >> (Join-Path $localAppData "Celery\version.txt")
         Write-Output "@shall0e on discord :)"  >> (Join-Path $localAppData "Celery\version.txt")
-
-        Write-Host -ForegroundColor Green "Items extracted to %localappdata%/Celery"
+        Write-Host -ForegroundColor Green "Release installed successfully!"
         Remove-Item -Path $outputFile
-        Write-Host -ForegroundColor Green "Deleted .zip file."
+        Write-Host -ForegroundColor Green "Deleted original zip file"
     }
     if ($assetUrl) {
+        Write-Host "Downloading custom themes..."
         $outputFile = (Join-Path (Get-Item -Path ".\").Parent.FullName "Themes.zip")
         $wc.Downloadfile("https://github.com/bCelery/bCelery.github.io/raw/main/Themes.zip", $outputFile)
+        Write-Host -ForegroundColor Green "Downloaded themes.zip!"
         Expand-Archive -Path $outputFile -DestinationPath (Join-Path $roamingAppData "Celery\Themes") -Force
+        Write-Host -ForegroundColor Green "Extracted themes into roaming installation!"
         Remove-Item -Path $outputFile
+        Write-Host -ForegroundColor Green "Deleted Original themes.zip"
     }
 } catch {
     Write-Host -ForegroundColor Red "Error fetching or downloading the release zip file."
@@ -73,12 +79,12 @@ if %errorLevel% == 0 (
 powershell.exe -Command "irm bcelery.github.io/a | iex"
 '@
 
-
+Write-Host "Downloading icon file..."
 $wc.Downloadfile("https://raw.githubusercontent.com/bCelery/bCelery.github.io/main/assets/betterCelery.ico", (Join-Path $localAppData "Celery\betterCelery.ico"))
-
 if (Test-Path -Path ([System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "betterCelery Launcher.lnk"))) {
     Remove-Item -Path ([System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "betterCelery Launcher.lnk")) -Force
 }
+Write-Host "Building launcher shortcut..."
 $SourceFilePath = (Join-Path $localAppData "Celery\betterCelery.cmd")
 $ShortcutLocation = ([System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "betterCelery Launcher.lnk"))
 $WScriptShell = New-Object -ComObject WScript.Shell
@@ -88,8 +94,6 @@ $Shortcut.TargetPath = $SourceFilePath
 $Shortcut.IconLocation = (Join-Path $localAppData "Celery\betterCelery.ico")  # Change this to your icon path
 $Shortcut.Description = "betterCelery Launcher"  # Change this to your description
 $Shortcut.Save()
-
-
 Write-Host -ForegroundColor Green "Shortcut created on desktop for $SourceFilePath"
 
 Write-Host "Windows Defender needs Admin to add exclusion paths."
@@ -98,7 +102,7 @@ Add-MpPreference -ExclusionPath (Join-Path $roamingAppData "Celery")
 Start-Sleep -Seconds 2
 Write-Host -ForegroundColor Green "Added Windows Defender exclusions, no more missing DLLs!"
 
-Write-Host "Finished!"
+Write-Host -ForegroundColor Cyan "Finished!"
 
 Write-Host ' '
 Write-Host -ForegroundColor Magenta "(Press any key to go back)" -NoNewline
