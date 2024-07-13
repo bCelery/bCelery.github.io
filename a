@@ -120,7 +120,7 @@ function neofetch {
 
     $neoversion = (Invoke-WebRequest -Uri 'https://api.github.com/repos/sten-code/Celery/releases/latest' | ConvertFrom-Json).tag_name
     Write-HostCenter -ForegroundColor 'White' -Message "latest Celery version: v$neoversion"
-    Write-HostCenter -ForegroundColor 'White' -Message "latest Fertiziler version: v1.0.0"
+    Write-HostCenter -ForegroundColor 'White' -Message "latest betterCelery version: v1.0.1"
     Write-Host ' '
     $neoversion = (Invoke-WebRequest -UserAgent "WEAO-3PService" -Method Get -Uri 'https://weao.xyz/api/versions/current' | ConvertFrom-Json).WindowsDate
     Write-HostCenter -ForegroundColor 'White' -Message "last Roblox update: $neoversion"
