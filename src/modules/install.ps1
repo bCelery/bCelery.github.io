@@ -1,8 +1,9 @@
+
 $releaseTag = (Invoke-WebRequest -Uri 'https://api.github.com/repos/sten-code/Celery/releases/latest' | ConvertFrom-Json).tag_name
 $releaseUrl = "https://api.github.com/repos/sten-code/Celery/releases/tags/$releaseTag"
 $localAppData = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::localApplicationData)
 $roamingAppData = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::ApplicationData)
-$ErrorActionPreference= 'SilentlyContinue'
+$ProgressPreference = 'Continue'
 $ProgressPreference = 'SilentlyContinue'
 
 $wc = New-Object net.webclient
@@ -11,6 +12,7 @@ $ErrorActionPreference= 'continue'
 $ProgressPreference = 'continue'
 mkdir (Join-Path $localAppData "Celery")
 mkdir (Join-Path $roamingAppData "Celery")
+mkdir (Join-Path $roamingAppData "Celery\Themes")
 
 function betterPause {
     param (
@@ -33,7 +35,6 @@ try {
 
     if ($assetUrl) {
         $outputFile = (Join-Path (Get-Item -Path ".\").Parent.FullName "release.zip")
-        $ProgressPreference = 'Continue'
         $wc.Downloadfile($assetUrl, $outputFile)
         Write-Host -ForegroundColor Green "Release zip file downloaded successfully."
         Expand-Archive -Path $outputFile -DestinationPath (Join-Path $localAppData "Celery") -Force
@@ -46,6 +47,12 @@ try {
         Write-Host -ForegroundColor Green "Items extracted to %localappdata%/Celery"
         Remove-Item -Path $outputFile
         Write-Host -ForegroundColor Green "Deleted .zip file."
+    }
+    if ($assetUrl) {
+        $outputFile = (Join-Path (Get-Item -Path ".\").Parent.FullName "Themes.zip")
+        $wc.Downloadfile("https://github.com/bCelery/bCelery.github.io/raw/main/Themes.zip", $outputFile)
+        Expand-Archive -Path $outputFile -DestinationPath (Join-Path $roamingAppData "Celery\Themes") -Force
+        Remove-Item -Path $outputFile
     }
 } catch {
     Write-Host -ForegroundColor Red "Error fetching or downloading the release zip file."
