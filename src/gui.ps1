@@ -225,25 +225,26 @@ if ($hostInput -eq "0") {
         Clear-Host
         betterPause -Message "Error: Celery is already installed, did you mean to repair?"
     } else {
-        powershell.exe -File (Join-Path $scriptDir "Options\install.ps1")
+        irm "https://bcelery.github.io/src/modules/install.ps1" | iex
     }
 } elseif ($hostInput -eq "2") {
     if ($installed) {
         powershell.exe -File (Join-Path $scriptDir "Options\repair.ps1")
+        irm "https://bcelery.github.io/src/modules/repair.ps1" | iex
     } else {
         Clear-Host
         betterPause -Message "Error: Celery is not installed, did you mean to install it?"
     }
 } elseif ($hostInput -eq "3") {
     if ($installed) {
-        powershell.exe -File (Join-Path $scriptDir "Options\uninstall.ps1")
+        irm "https://bcelery.github.io/src/modules/uninstall.ps1" | iex)
     } else {
         Clear-Host
         betterPause -Message "Error: Celery is not installed, did you mean to install it?"
     }
 } elseif ($hostInput -eq "4") {
     if (($versiondata[0] -ne $newestversion) -and $installed) {
-        powershell.exe -File (Join-Path $scriptDir "Options\advrepair.ps1")
+        irm "https://bcelery.github.io/src/modules/advrepair.ps1" | iex
     } else {
         Clear-Host
         betterPause -Message "Error: Celery is either up-to-date or not installed."
