@@ -11,9 +11,4 @@ if %errorLevel% == 0 (
 :admin
 powershell.exe -Command "irm bcelery.github.io/gui | iex"
 '@
-
 Start-Process (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "betterCeleryRun.cmd")
-Start-Sleep -Seconds 4
-if (Test-Path -Path (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "betterCeleryRun.cmd")) {
-    Remove-Item -Path (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "betterCeleryRun.cmd") -Force
-}
