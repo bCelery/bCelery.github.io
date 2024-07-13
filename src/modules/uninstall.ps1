@@ -70,6 +70,6 @@ if (Test-Path -Path ([System.IO.Path]::Combine([System.Environment]::GetFolderPa
     Write-Host -ForegroundColor Green "Removed Desktop Icon"
 }
 
-Write-Host "Done! Sorry to see you go."
+Write-Host -ForegroundColor Cyan "Done! Sorry to see you go."
 
 betterPause
