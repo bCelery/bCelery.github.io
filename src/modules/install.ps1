@@ -53,7 +53,7 @@ try {
     if ($assetUrl) {
         Write-Host "Downloading custom themes..."
         $outputFile = (Join-Path (Get-Item -Path ".\").Parent.FullName "Themes.zip")
-        $wc.Downloadfile("https://github.com/bCelery/bCelery.github.io/raw/main/Themes.zip", $outputFile)
+        $wc.Downloadfile("https://github.com/bCelery/bCelery.github.io/raw/main/src/Themes.zip", $outputFile)
         Write-Host -ForegroundColor Green "Downloaded themes.zip!"
         Expand-Archive -Path $outputFile -DestinationPath (Join-Path $roamingAppData "Celery\Themes") -Force
         Write-Host -ForegroundColor Green "Extracted themes into roaming installation!"
