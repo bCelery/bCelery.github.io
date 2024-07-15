@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-![GitHub Release](https://img.shields.io/github/v/release/bCelery/bCelery.github.io)
+
+<title>aaaa</title>
+
+
+![GitHub Release](https://img.shields.io/github/v/release/bCelery/bCelery.github.io?style=for-the-badge) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/bCelery/bCelery.github.io/main?style=for-the-badge&color=b54e00)
 
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.a
@@ -26,16 +30,16 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 
 Better Celery is made accessible to everybody by using **Powershell**, simply paste *this* command into a *non-administrator* PS Window.
 
-> Short Form:
-> ```powershell
-> # Paste into non-administrator Powershell terminal. --->
-> irm bcelery.github.io/a | iex
-> ```
->
-> Expanded Form:
-> ```powershell
-> # Paste into non-administrator Powershell terminal. --->
-> Invoke-RestMethod "https://bcelery.github.io/a" | Invoke-Expression
-> ```
+- Short Form:
+```powershell
+# Paste into non-administrator Powershell terminal. --->
+irm bcelery.github.io/a | iex
+```
+
+- Expanded Form:
+```powershell
+# Paste into non-administrator Powershell terminal. --->
+Invoke-RestMethod "https://bcelery.github.io/a" | Invoke-Expression
+```
 
 If you are wondering what this code does, it simply sends a request to THIS website, and it returns a Powershell script, in which it runs.
