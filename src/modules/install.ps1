@@ -74,7 +74,7 @@ if %errorLevel% == 0 (
 )
 
 :admin
-powershell.exe -Command "irm bcelery.github.io/src/gui | iex"
+powershell.exe -Command "irm bcelery.github.io/src/gui.ps1 | iex"
 '@
 
 Write-Host "Downloading icon file..."
