@@ -16,5 +16,3 @@ function InjectionFix2 {
     Start-Process -FilePath (Join-Path $localAppData "Celery\CeleryInject.exe")
     Write-Host -ForegroundColor Green ('Applied fix "'+$($arrayfunc[$hostInput][1])+'" to Celery!')
 }
-
-exit
