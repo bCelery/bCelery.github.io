@@ -235,6 +235,7 @@ if ($installed) {
     Write-Host '| [7] - Open Themes Folder'
     Write-Host '| [8] - Open Scripts Folder'
     Write-Host '| [9] - Open Autoexec Folder'
+    Write-Host '| [10] - Open Workspace Folder'
 } else {
     Write-Host '| [5] - Open Celery' -ForegroundColor Red
     Write-Host '| [6] - Open Installation Folder' -ForegroundColor Red
