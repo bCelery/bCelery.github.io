@@ -234,16 +234,20 @@ if ($installed) {
     Write-Host '| [6] - Open Installation Folder'
     Write-Host '| [7] - Open Themes Folder'
     Write-Host '| [8] - Open Scripts Folder'
+    Write-Host '| [9] - Open Autoexec Folder'
+    Write-Host '| [10] - Open Workspace Folder'
 } else {
     Write-Host '| [5] - Open Celery' -ForegroundColor Red
     Write-Host '| [6] - Open Installation Folder' -ForegroundColor Red
     Write-Host '| [7] - Open Themes Folder' -ForegroundColor Red
     Write-Host '| [8] - Open Scripts Folder' -ForegroundColor Red
+    Write-Host '| [9] - Open Autoexec Folder' -ForegroundColor Red
+    Write-Host '| [10] - Open Workspace Folder' -ForegroundColor Red
 }
 Write-Host ' '
 Write-Host 'Information' -ForegroundColor Blue
-Write-Host '| [9] - Display RBX/Celery Info'
-Write-Host '| [10] - Open Celery Site'
+Write-Host '| [11] - Display RBX/Celery Info'
+Write-Host '| [12] - Open Celery Site'
 Write-Host ' '
 
 Write-Host -ForegroundColor Magenta "Selection > " -NoNewline
@@ -306,8 +310,22 @@ if ($hostInput -eq "1") {
         betterPause -Message "Error: folder does not exist. Celery may either be installed or you haven't ran it yet."
     }
 } elseif ($hostInput -eq "9") {
-    neofetch
+    if (Test-Path (Join-Path $localAppData "Celery\scripts") -PathType Container) {
+        cmd.exe /c "start %localappdata%/Celery/Autoexec"
+    } else {
+        Clear-Host
+        betterPause -Message "Error: folder does not exist. Celery may either be installed or you haven't ran it yet."
+    }
 } elseif ($hostInput -eq "10") {
+    if (Test-Path (Join-Path $localAppData "Celery\scripts") -PathType Container) {
+        cmd.exe /c "start %temp%/celery/workspace"
+    } else {
+        Clear-Host
+        betterPause -Message "Error: folder does not exist. Celery may either be installed or you haven't ran it yet."
+    }
+} elseif ($hostInput -eq "11") {
+    neofetch
+} elseif ($hostInput -eq "12") {
     Start-Process "https://celery.zip/"
 } else {
     Clear-Host
