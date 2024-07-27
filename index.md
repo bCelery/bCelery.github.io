@@ -2,9 +2,12 @@
 BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and manager for the Roblox executor Celery. Celery is a Level 7/8 executor with 74% UNC (Universal Naming Convention), with a high degree of customization.
 
 ## Why should I use BetterCelery?
-1. Menu for all sorts of Fixes and Patches.
-2. Easy updating, automatic checking for Celery updates.
-3. Lots of pre-installed Scripts and Themes.
+1. Menu for all sorts of fixes and patches.
+2. Easy installation and access to different important folders
+    - Folders like "*/scripts*", "*/themes*", "*/Celery*".
+3. Just incase you **don't** like Celery or BetterCelery, easy Uninstallation!
+4. Automatic checking/updating for Celery changes.
+5. Lots of pre-installed Scripts and Themes.
     - Themes included:
         - betterCelery - *(Black, purple and blue colors.)*
         - Not Solara - *(Solara colors.)*
@@ -16,11 +19,10 @@ BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and
         - Catppuccin Macchiato - *(A deeper version of Frappe.)*
         - Catppuccin Mocha - *(An even DEEPER version of Frappe.)*
     - Scripts included:
-        - Dark Dex V5 - *(+New Compiler, an extremely detailed Explorer for Roblox games!)*
-        - Infinite Yield - *(An all-in-one Admin GUI, including Noclip, Fly, Bang and Fling)*
-4. Easy installation and access to different important folders
-    - Folders like "*/scripts*", "*/themes*", "*/Celery*".
-5. Just incase you don't like Celery or BetterCelery, easy Uninstallation!
+        - Dark Dex - *(+New Compiler, an extremely detailed Explorer for Roblox games, now in Dark Mode!)*
+        - Infinite Yield - *(An all-in-one Admin GUI, including Noclip, Fly, Bang(best command fr) and Fling)*
+        - BootSpy - OnClientEvent logger and catcher, very useful for debugging and reversing a Roblox game.
+
 ## Installation
 BetterCelery is made accessible to everybody by using **Powershell**, simply paste *this* command into a *non-administrator* PS Window.
 - Short Form:
@@ -36,13 +38,17 @@ Invoke-RestMethod "https://bcelery.github.io/a" | Invoke-Expression
 ```
 
 ## Usage
+BetterCelery is a Command Line Interface ***(CLI)***, which was used in the **70s** and **early 80s** to select content inside a CMD box *(That one app on your computer you never use because you are a skid that doesnt know how to use it!)*, read the words displayed and simply type the number beside the option you want!
 ### Installing
 1. After running the command in the Installation section, press 1 on your keyboard.
 2. Celery will automatically install to "**%localappdata%/Celery**"
+3. Pat yourself on the back, you did it!
 
 ### Patching
 1. Navigate to "Patch Celery" by using the keyboard.
 ![image](https://github.com/user-attachments/assets/dccc4d15-3c37-412a-8f5c-a9904afa03e3)
 2. Select the issue that you are encountering.
 ![image](https://github.com/user-attachments/assets/761681db-8b1a-4222-b31c-bdb7fc3b0628)
+
+# &nbsp;
 © Celery Team, https://celery.zip/
