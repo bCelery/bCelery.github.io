@@ -1,6 +1,5 @@
 ![GitHub Release](https://img.shields.io/github/v/release/bCelery/bCelery.github.io?style=for-the-badge) ![Commits](https://img.shields.io/github/commit-activity/w/bCelery/bCelery.github.io/main?style=for-the-badge&color=b54e00)
-BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and manager for the Roblox executor Celery.
-Celery is a Level 7/8 executor with 74% UNC (Universal Naming Convention), with a high degree of customization.
+BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and manager for the Roblox executor Celery. Celery is a Level 7/8 executor with 74% UNC (Universal Naming Convention), with a high degree of customization.
 
 ## Why should I use BetterCelery?
 1. Menu for all sorts of Fixes and Patches.
@@ -40,6 +39,7 @@ Invoke-RestMethod "https://bcelery.github.io/a" | Invoke-Expression
 ### Installing
 1. After running the command in the Installation section, press 1 on your keyboard.
 2. Celery will automatically install to "**%localappdata%/Celery**"
+
 ### Patching
 1. Navigate to "Patch Celery" by using the keyboard.
 ![image](https://github.com/user-attachments/assets/dccc4d15-3c37-412a-8f5c-a9904afa03e3)
