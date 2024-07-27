@@ -1,5 +1,0 @@
-Clear-Host
-$ProgressPreference = 'silentlycontinue'
-$ProgressPreference = 'silentlycontinue'
-
-irm "https://bcelery.github.io/gui.ps1" | iex
