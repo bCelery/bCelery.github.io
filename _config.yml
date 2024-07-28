@@ -1,5 +1,5 @@
 title: BetterCelery
 logo: /betterCelery.png
-description: A custom launcher and installer for the Roblox Executor, Celery.
-show_downloads: true
+description: A custom launcher and installer for Celery Executor.
+show_downloads: false
 theme: jekyll-theme-minimal
