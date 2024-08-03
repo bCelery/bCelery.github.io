@@ -4,7 +4,7 @@ $scriptDir = (Get-Item (Get-Location).Path).parent.FullName
 $ErrorActionPreference= 'silentlycontinue'
 $ProgressPreference = 'silentlycontinue'
 
-$host.UI.RawUI.WindowTitle = "betterCelery - v1.0.5-b"
+$host.UI.RawUI.WindowTitle = "${scriptDir} betterCelery - v1.0.5-b"
 
 Add-Type -TypeDefinition @'
     using System;
@@ -196,7 +196,7 @@ if (Test-Path (Join-Path $localAppData "Celery") -PathType Container) {
 if (Test-Path (Join-Path $localAppData "Celery") -PathType Container) {
     $versiondata = ((Get-Content -Path (Join-Path $localAppdata "Celery\version.txt")) -split "\n")
     Write-HostCenter -Message "Celery is installed! (v$($versiondata[0]))" -ForegroundColor "Green"
-    if (!($scriptDir -Match "\Windows\") -and !($scriptDir -Match "\AppData\Local\Celery\")) {
+    if (!($scriptDir -Like "*\Windows\*") -and !($scriptDir -Like "*\AppData\Local\Celery\*")) {
             Write-HostCenter -Message "This installation is from an unsafe-source." -ForegroundColor "Red"
             Write-HostCenter -Message "If you installed from Linkvertise, please run your antivirus immediately!" -ForegroundColor "Red"
             Write-HostCenter -Message "You are now being redirected to the official source, and this version will be deleted." -ForegroundColor "Red"
