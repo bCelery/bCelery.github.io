@@ -1,7 +1,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/bCelery/bCelery.github.io?style=for-the-badge) ![Commits](https://img.shields.io/github/commit-activity/w/bCelery/bCelery.github.io/main?style=for-the-badge&color=b54e00)![ BetterCelery, Celery, Celery Executor, Roblox, Celery Executor Roblox, Exec, Executor, Free Keyless Executor, bCelery, Executor, bCelery Executor, BetterCelery Executor, 2.0.8celeryaaa, Celery Install, Celery Install Script, Script, Powershell, Executors, Free Executors, Free Executor](https://upload.wikimedia.org/wikipedia/commons/d/d2/Blank.png)
 
-## THIS IS THE ONLY OFFICIAL PLACE TO GET BETTERCELERY. ANY YOUTUBE VIDEOS PROMOTING A DIFFERENT SITE ARE FAKE!!!
-### BetterCelery now has a Discord, join it here! https://discord.gg/xhGek7yWrj
+# THIS IS THE ONLY OFFICIAL PLACE TO GET BETTERCELERY. ANY YOUTUBE VIDEOS PROMOTING A DIFFERENT SITE ARE FAKE!!!
+## BetterCelery now has a Discord, join it here! [https://discord.gg/xhGek7yWrj]( https://discord.gg/xhGek7yWrj )
 &nbsp;
 BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and manager for the Roblox executor Celery. Celery is a Level 8 executor with 73% UNC (Unified Naming Convention), with a **very high** degree of customization (custom UIs, custom themes.)
 
@@ -53,4 +53,4 @@ Fair warning, this may not be a for-sure fix, if you encounter the issue,
 
 # &nbsp;
 © *Celery Team, https://celery.zip/*
-© *@shall0e, https://bcelery.github.io/*
+© *, https://bcelery.github.io/*
