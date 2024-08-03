@@ -4,7 +4,7 @@ $scriptDir = (Get-Item (Get-Location).Path).parent.FullName
 $ErrorActionPreference= 'silentlycontinue'
 $ProgressPreference = 'silentlycontinue'
 
-$host.UI.RawUI.WindowTitle = "betterCelery - v1.0.5"
+$host.UI.RawUI.WindowTitle = "betterCelery - v1.0.5-b"
 
 Add-Type -TypeDefinition @'
     using System;
