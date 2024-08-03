@@ -1,9 +1,11 @@
 ![GitHub Release](https://img.shields.io/github/v/release/bCelery/bCelery.github.io?style=for-the-badge) ![Commits](https://img.shields.io/github/commit-activity/w/bCelery/bCelery.github.io/main?style=for-the-badge&color=b54e00)![ BetterCelery, Celery, Celery Executor, Roblox, Celery Executor Roblox, Exec, Executor, Free Keyless Executor, bCelery, Executor, bCelery Executor, BetterCelery Executor, 2.0.8celeryaaa, Celery Install, Celery Install Script, Script, Powershell, Executors, Free Executors, Free Executor](https://upload.wikimedia.org/wikipedia/commons/d/d2/Blank.png)
 
-# THIS IS THE ONLY OFFICIAL PLACE TO GET BETTERCELERY. ANY YOUTUBE VIDEOS PROMOTING A DIFFERENT SITE ARE FAKE!!!
-## BetterCelery now has a Discord, join it here! [https://discord.gg/xhGek7yWrj]( https://discord.gg/xhGek7yWrj )
+### THIS IS THE ONLY OFFICIAL PLACE TO GET BETTERCELERY. ANY YOUTUBE VIDEOS PROMOTING A DIFFERENT SITE ARE FAKE!!!
+### BetterCelery now has a Discord, join it here! [https://discord.gg/xhGek7yWrj]( https://discord.gg/xhGek7yWrj )
 &nbsp;
 BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and manager for the Roblox executor Celery. Celery is a Level 8 executor with 73% UNC (Unified Naming Convention), with a **very high** degree of customization (custom UIs, custom themes.)
+
+&nbsp;
 
 ## **Installation *(No Download Required!)***
 BetterCelery is made accessible to *everybody* by using **Powershell**.
@@ -13,6 +15,8 @@ BetterCelery is made accessible to *everybody* by using **Powershell**.
     ```powershell
     irm bcelery.github.io/a | iex
     ```
+    
+&nbsp;
 
 ## Why should I use BetterCelery?
 1. Menu for all sorts of fixes and patches.
@@ -36,9 +40,10 @@ BetterCelery is made accessible to *everybody* by using **Powershell**.
         - InfiniteYield - *(An **all-in-one** Admin GUI, including Noclip, Fly, Bang(best command fr) and Fling.)*
         - BootSpy - *(OnClientEvent logger and catcher, very useful for debugging and reversing a Roblox game.)*
         - UNC Tester - *(Quick access to checking the UNC of Celery, the current UNC is **73%**.)*
-
+&nbsp;
 ## Usage
 BetterCelery is a Command Line Interface ***(CLI)***, which was used in the **70s** and **early 80s** to select content inside a CMD box, read the words displayed and simply type the number beside the option you want!
+
 ### Installing
 1. After running the command in the Installation section, press 1 on your keyboard.
 2. Celery will automatically install to "**%localappdata%/Celery**"
@@ -53,4 +58,4 @@ Fair warning, this may not be a for-sure fix, if you encounter the issue,
 
 # &nbsp;
 © *Celery Team, https://celery.zip/*
-© *, https://bcelery.github.io/*
+© *@shall0e, https://bcelery.github.io/*
