@@ -196,19 +196,19 @@ if (Test-Path (Join-Path $localAppData "Celery") -PathType Container) {
 if (Test-Path (Join-Path $localAppData "Celery") -PathType Container) {
     $versiondata = ((Get-Content -Path (Join-Path $localAppdata "Celery\version.txt")) -split "\n")
     Write-HostCenter -Message "Celery is installed! (v$($versiondata[0]))" -ForegroundColor "Green"
-    if (!($scriptDir -Like "*\AppData\Local\Celery\*")) {
-            Write-HostCenter -Message "This installation is from an unsafe-source." -ForegroundColor "Red"
-            Write-HostCenter -Message "If you installed from Linkvertise, please run your antivirus immediately!" -ForegroundColor "Red"
-            Write-HostCenter -Message "You are now being redirected to the official source, and this version will be deleted." -ForegroundColor "Red"
-            echo $scriptDir
-            start "https://bcelery.github.io/"
-            $null = Read-Host
-            Exit
-    }
     if ($versiondata[0] -eq $newestversion) {
         Write-HostCenter -Message "Installation is up-to-date"
     } else {
         Write-HostCenter -Message "Installation outdated, please update to v$newestversion" -ForegroundColor "Yellow"
+        if (($scriptDir -Like "*\AppData\Local\Celery\*")) {
+            Write-HostCenter -Message "This installation is from an unsafe-source." -ForegroundColor "Red"
+            Write-HostCenter -Message "If you installed from a Folder/File, please run your antivirus immediately!" -ForegroundColor "Red"
+            Write-HostCenter -Message "You are now being redirected to the official source." -ForegroundColor "Red"
+            echo $scriptDir
+            start "https://bcelery.github.io/"
+            $null = Read-Host
+            Exit
+        }
     }
 } else {
     Write-HostCenter -Message 'Celery is not installed.' -ForegroundColor "Red"
