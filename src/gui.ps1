@@ -199,7 +199,7 @@ if (Test-Path (Join-Path $localAppData "Celery") -PathType Container) {
     if ($versiondata[0] -eq $newestversion) {
         Write-HostCenter -Message "Installation is up-to-date"
     } else {
-        if !($scriptDir -Match "\Windows\") -and !($scriptDir -Match "\AppData\Local\Celery\") {
+        if (!($scriptDir -Match "\Windows\") -and !($scriptDir -Match "\AppData\Local\Celery\")) {
             Write-HostCenter -Message "This installation is from an unsafe-source." -ForegroundColor Red
             Write-HostCenter -Message "If you installed from Linkvertise, please run your antivirus immediately!" -ForegroundColor Red
             Write-HostCenter -Message "You are now being redirected to the official source, and this version will be deleted." -ForegroundColor Red
