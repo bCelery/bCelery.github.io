@@ -1,6 +1,6 @@
 $localAppData = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::localApplicationData)
 $roamingAppData = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::ApplicationData)
-$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$scriptDir = $PSScriptRoot
 $ErrorActionPreference= 'silentlycontinue'
 $ProgressPreference = 'silentlycontinue'
 
