@@ -13,7 +13,7 @@ BetterCelery is made accessible to *everybody* by using **Powershell**.
 2. Select the first result, it should open a Blue (or Black) terminal.
 3. Paste in the command below and press enter on your keyboard;
     ```powershell
-    irm bcelery.github.io/a | iex
+    irm "bcelery.github.io/a" | iex
     ```
     
 &nbsp;
