@@ -58,6 +58,7 @@ BetterCelery is made accessible to *everybody* by using **Powershell**.
                 - Nexus-Hub - *(A really cool GUI for MM2)*
         - Script-Hubs:
             - CatHub - *A **HUGE** Script-Hub filled with Scripts suych as AirHub, ThunderClient, and 100 other scripts!*
+
 &nbsp;
 
 ## Usage
