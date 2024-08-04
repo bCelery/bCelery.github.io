@@ -8,7 +8,7 @@ BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and
 
 &nbsp;
 
-## Installation **(No Download Required!)**
+# Installation **(No Download Required!)**
 BetterCelery is made accessible to *everybody* by using **Powershell**.
 1. To open a Powershell Terminal in Windows, simply open up the **Windows Search Bar** and type in "powershell".
 2. Select the first result, it should open a Blue (or Black) terminal.
@@ -61,15 +61,15 @@ BetterCelery is made accessible to *everybody* by using **Powershell**.
 
 &nbsp;
 
-## Usage
+# Usage
 BetterCelery is a Command Line Interface ***(CLI)***, which was used primarly in the **80s** and **early 90s** to select content inside a CMD box, read the words displayed and simply type the number beside the option you want!
 
-### Installing
+## Installing
 1. After running the command in the Installation section, press 1 on your keyboard.
 2. Celery will automatically install to "**%localappdata%/Celery**"
 3. Pat yourself on the back, you did it!
 
-### Patching
+## Patching
 1. Navigate to "Patch Celery" by using the keyboard.
 ![image](https://github.com/user-attachments/assets/dccc4d15-3c37-412a-8f5c-a9904afa03e3)
 2. Select the issue that you are encountering.
