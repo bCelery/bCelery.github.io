@@ -2,8 +2,10 @@
 
 ### THIS IS THE ONLY OFFICIAL PLACE TO GET BETTERCELERY. ANY YOUTUBE VIDEOS PROMOTING A DIFFERENT SITE ARE FAKE!!!
 #### BetterCelery now has a Discord, join it here! [https://discord.gg/xhGek7yWrj]( https://discord.gg/xhGek7yWrj )
+
 &nbsp;
-BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and manager for the Roblox executor Celery. Celery is a Level 8 executor with 73% UNC (Unified Naming Convention), with a **very high** degree of customization (custom UIs, custom themes.)
+
+##### BetterCelery (commonly named "**bCelery**") is a custom launcher, installer, and manager for the Roblox executor Celery. Celery is a Level 8 executor with 73% UNC (Unified Naming Convention), with a **very high** degree of customization (custom UIs, custom themes.)
 ![image](https://github.com/user-attachments/assets/b1dd74f2-8e82-422a-abbd-43732073b396)
 
 &nbsp;
@@ -37,27 +39,23 @@ BetterCelery is made accessible to *everybody* by using **Powershell**.
         - Catppuccin Macchiato - *(A deeper version of Frappe.)*
         - Catppuccin Mocha - *(An even **deeper** version of Frappe.)*
     - Scripts included:
-        - Utility Scripts:
-            - Dark Dex - *(+New Compiler, an **extremely** detailed Explorer for Roblox games, now in Dark Mode!)*
-            - InfiniteYield - *(An **all-in-one** Admin GUI, including Noclip, Fly, Bang(best command fr) and Fling.)*
-            - BootSpy - *(OnClientEvent logger and catcher, very useful for debugging and reversing a Roblox game.)*
-            - UNC Tester - *(Quick access to checking the UNC of Celery, the current UNC is **73%**.)*
-        - Universal Scripts:
-            - Click-TP - *(Teleport using an item in your inventory.)*
-            - Shallow's Basic Universal Aimbot - *(My own custom aimbot! It works pretty good, especially for Arsenal.)*
-        - Game Specific:
-            - Pressure:
-                - PressureScript - *(An OP GUI for Pressure, you will probably win 100% of the time.)*
-            - Arsenal:
-                - Shallow's Basic Universal Aimbot
-                - Shallow's Attribute Changer - *(Change stats for all weapons in Arsenal.)*
-                - SanityLoader/ArsenalX - *(A detailed GUI for all Arsenal Cheating needs!)*
-            - Doors:
-                - Clutch - *(Doors GUI)*
-            - Murder Mystery 2
-                - Nexus-Hub - *(A really cool GUI for MM2)*
-        - Script-Hubs:
-            - CatHub - *A **HUGE** Script-Hub filled with Scripts suych as AirHub, ThunderClient, and 100 other scripts!*
+        - Dark Dex - +New decompiler, an **extremely** detailed Explorer for Roblox games, now in Dark Mode!
+        - InfiniteYield - An **all-in-one** Admin GUI, including Noclip, Fly, Bang(best command fr) and Fling.
+        - BootSpy - OnClientEvent logger and catcher, very useful for debugging and reversing a Roblox game.
+        - UNC Tester - Quick access to checking the UNC of Celery, the current UNC is **73%**.
+        - Click-TP - Teleport using an item in your inventory.
+        - Shallow's Basic Universal Aimbot - *(My own custom aimbot! It works pretty good, especially for Arsenal.
+        - CatHub - A **HUGE** Script-Hub filled with Scripts suych as AirHub, ThunderClient, and 100 other scripts!
+        - **(GAME)** Pressure:
+            - PressureScript - An OP GUI for Pressure, you will probably win 100% of the time.
+        - **(GAME)** Arsenal:
+            - Shallow's Basic Universal Aimbot - a fucking AWESOME aimbot.
+            - Shallow's Attribute Changer - Change stats for all weapons in Arsenal.
+            - SanityLoader/ArsenalX - A detailed GUI for all Arsenal Cheating needs!
+        - **(GAME)** Doors:
+            - Clutch - Doors GUI
+        - **(GAME)** Murder Mystery 2
+            - Nexus-Hub - A really cool GUI for MM2.
 
 &nbsp;
 
